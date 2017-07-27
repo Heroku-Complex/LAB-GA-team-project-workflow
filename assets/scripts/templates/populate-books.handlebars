@@ -1,0 +1,15 @@
+<ul data-id="{{books}}">
+
+{{#each books as |book|}}
+<form data-id="{{book.title}}">
+
+ <li>
+  <div data-id="{{book.id}}">
+  <h1> <small>Title: {{book.title}}</small></h1>
+  <p> Author: {{book.author}}</p>
+  </div>
+</li>
+<form>
+{{/each}}
+
+</ul>
